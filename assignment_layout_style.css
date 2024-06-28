@@ -71,259 +71,282 @@
 }
 /* header css ends */
 
-
 /* content css starts */
-.content-img{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/webbg.jpg);
-    background-size: cover;
-    float: left;
+.content-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/webbg.jpg);
+  background-size: cover;
+  float: left;
 }
 
-.content-img .content-text{
-    color: aliceblue;
-    padding-top: 250px;
-    font-size: 25px;
-    padding-left: 170px;
-    padding-right: 350px;
+.content-img .content-text {
+  color: aliceblue;
+  padding-top: 250px;
+  font-size: 25px;
+  padding-left: 170px;
+  padding-right: 350px;
 }
 
-.content-img .content-text p{
-    padding-top: 25px;
+.content-img .content-text p {
+  padding-top: 25px;
 }
 
-.content-btn{
-    margin-top: 50px;
+.content-btn {
+  margin-top: 50px;
 }
 
-.content-btn button{
-    width: 150px;
-    height: 50px;
-    font-size: 17px;
-    border-radius: 25px;
-    font-weight: 600;
-    border: none;
-    
-
+.content-btn button {
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
 }
 
-.content-btn .contact{
-    background-color: rgb(64, 64, 180);
-    color: aliceblue;
-    margin: 15px;
-    transition: .5s ease;
+.content-btn .contact {
+  background-color: rgb(64, 64, 180);
+  color: aliceblue;
+  margin: 15px;
+  transition: 0.5s ease;
 }
 
-.content-btn .contact:hover{
-    background-color: aliceblue;
-    color: rgb(64, 64, 180);
+.content-btn .contact:hover {
+  background-color: aliceblue;
+  color: rgb(64, 64, 180);
 }
 
-.content-btn .abt{
-    color: rgb(64, 64, 180);
-    background-color: aliceblue;
-    /* margin: 10px; */
-    transition: .5s ease;
+.content-btn .abt {
+  color: rgb(64, 64, 180);
+  background-color: aliceblue;
+  /* margin: 10px; */
+  transition: 0.5s ease;
 }
 
-.content-btn .abt:hover{
-    background-color: rgb(64, 64, 180);
-    color: aliceblue;
+.content-btn .abt:hover {
+  background-color: rgb(64, 64, 180);
+  color: aliceblue;
 }
 /* content css ends */
 
 /* brief css starts */
-.domain-brief{
-    width: 100%;
-    height: 175px;
-    background-color: rgb(64, 64, 180);
-    float: left;
+.domain-brief {
+  width: 100%;
+  height: 175px;
+  background-color: rgb(64, 64, 180);
+  float: left;
 }
 
-.domain-brief h1{
-    color: aliceblue;
-    padding: 50px 0 0 50px;
+.domain-brief h1 {
+  color: aliceblue;
+  padding: 50px 0 0 50px;
 }
 
-.domain-brief .join{
-    color: rgb(64, 64, 180);
-    background-color: aliceblue;
-    /* margin: 10px; */
-    transition: .5s ease;
-    width: 100px;
-    height: 35px;
-    font-size: 14px;
-    border-radius: 25px;
-    font-weight: 600;
-    border: none;
-    margin-left: 50px;
-    margin-top: 25px;
+.domain-brief .join {
+  color: rgb(64, 64, 180);
+  background-color: aliceblue;
+  /* margin: 10px; */
+  transition: 0.5s ease;
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  margin-left: 50px;
+  margin-top: 25px;
 }
 
-.domain-brief .join:hover{
-    
-    background-color: rgb(10, 10, 52);
-    color: aliceblue;
+.domain-brief .join:hover {
+  background-color: rgb(10, 10, 52);
+  color: aliceblue;
 }
 /* brief css ends */
 
 /* services css starts */
-.services{
-    width: 100%;
-    height: 100vh;
-    float: left;
+.services {
+  width: 100%;
+  height: 100vh;
+  float: left;
 }
 
-.services h1{
-    font-size: 50px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.services h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.services .services-container{
-    margin-left: 20px;
+.services .services-container {
+  margin-left: 20px;
 }
-.service{
-    float: left;
-    background-color: aliceblue;
-    width: 29%;
-    height: 400px;
-    margin: 25px;
-    transition: .5s ease;
-    border-radius: 25px;
+.service {
+  float: left;
+  background-color: aliceblue;
+  width: 29%;
+  height: 400px;
+  margin: 25px;
+  transition: 0.5s ease;
+  border-radius: 25px;
+}
+.service h1 {
+  font-size: 40px;
+}
+.service p {
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
 
-}
-.service h1{
-    font-size: 40px;
-}
-.service p{
-    font-size: 25px;
-    text-align: center;
-    padding: 15px;
-}
-
-.service:hover{
-    transform: scale(1.02);
-    border: 3px solid #1778f2;
-    box-shadow: 0px 0px 30px -6px #000;
-
+.service:hover {
+  transform: scale(1.02);
+  border: 3px solid #1778f2;
+  box-shadow: 0px 0px 30px -6px #000;
 }
 /* services css ends */
 
 /* number section css starts */
-.number-section{
-    width: 100%;
-    height: 65vh;
-    float: left;
-    background-color:#4e4bc2;
+.number-section {
+  width: 100%;
+  height: 65vh;
+  float: left;
+  background-color: #4e4bc2;
 }
-.number-section .boxes{
-    padding: 65px;
+.number-section .boxes {
+  padding: 65px;
 }
-.number-section .box{
-    width: 18%;
-    height: 250px;
-    float: left;
-    background-color:#4e4bc2;
-    margin: 40px;
-    /* padding: 50px; */
-    text-align: center;
-    transition: .2s ease;
-    color: azure;
-
+.number-section .box {
+  width: 18%;
+  height: 250px;
+  float: left;
+  background-color: #4e4bc2;
+  margin: 40px;
+  /* padding: 50px; */
+  text-align: center;
+  transition: 0.2s ease;
+  color: azure;
 }
-.number-section .box i{
-    font-size: 35px;
-    padding: 35px;
-}
-
-.number-section .box h1{
-    font-size: 40px;
-    padding: 15px;
+.number-section .box i {
+  font-size: 35px;
+  padding: 35px;
 }
 
-.number-section .box p{
-    font-size: 20px;
-    padding: 20px;
+.number-section .box h1 {
+  font-size: 40px;
+  padding: 15px;
 }
 
-.number-section .box:hover{
-    /* transform: scale(1.02); */
-    border: 5px solid azure;
-    box-shadow: 0px 0px 30px -6px aliceblue;
+.number-section .box p {
+  font-size: 20px;
+  padding: 20px;
+}
 
-
+.number-section .box:hover {
+  /* transform: scale(1.02); */
+  border: 5px solid azure;
+  box-shadow: 0px 0px 30px -6px aliceblue;
 }
 /* number section css ends */
 
 /* blog css starts */
-.blog{
-    width: 100%;
-    height: 155vh;
-    float: left;
+.blog {
+  width: 100%;
+  height: 155vh;
+  float: left;
 }
 
-.blog h1{
-    font-size: 50px;
-    padding: 50px;
-    text-align: center;
+.blog h1 {
+  font-size: 50px;
+  padding: 50px;
+  text-align: center;
 }
-.blog .blog-container{
-    margin-left: 50px;
-    margin-top: 50px;
+.blog .blog-container {
+  margin-left: 50px;
+  margin-top: 50px;
 }
-.blog-post{
-    width: 30%;
-    height: 800px;
-    background-color: aliceblue;
-    float: left;
-    margin: 15px;
-    transition: .5s ease;
-}
-
-.blog-post img{
-    width:100%;
-    height:250px;
-}
-.blog-post h1{
-    /* font-size: 30px; */
-    padding: 30px;
-}
-.blog-post p{
-    font-size: 20px;
-    text-align: left;
-    padding: 25px;
-    padding-left: 30px;
-    
+.blog-post {
+  width: 30%;
+  height: 800px;
+  background-color: aliceblue;
+  float: left;
+  margin: 15px;
+  transition: 0.5s ease;
 }
 
-.blog-post:hover{
-    box-shadow: 0px 0px 30px -6px #000;
+.blog-post img {
+  width: 100%;
+  height: 250px;
+}
+.blog-post h1 {
+  /* font-size: 30px; */
+  padding: 30px;
+}
+.blog-post p {
+  font-size: 20px;
+  text-align: left;
+  padding: 25px;
+  padding-left: 30px;
+}
+
+.blog-post:hover {
+  box-shadow: 0px 0px 30px -6px #000;
 }
 /* blog css ends */
 
-.footer-section{
+.footer-section {
+  width: 100%;
+  height: 65vh;
+  background-color: rgb(7, 7, 63);
+  /* color: aliceblue; */
+  float: left;
+}
+
+.footer-section .footer-section-content {
+  margin-left: 130px;
+  margin-top: 80px;
+}
+.footer-box {
+  width: 23%;
+  height: 300px;
+  /* background-color: aliceblue; */
+  float: left;
+  padding-left: 15px;
+  /* margin: 25px; */
+}
+
+.footer-box h1 {
+  padding-top: 25px;
+  font-size: 40px;
+  padding-left: 25px;
+  color: aliceblue;
+
+}
+
+.footer-box p {
+  padding-left: 25px;
+  padding-top: 25px;
+  /* float: left; */
+  font-size: 20px;
+  color: #ADBBCB;
+}
+
+.footer-box i{
+    float: left;
+    /* padding-left: 25px; */
+    /* padding-top: 25px; */
+}
+/* footer section css ends */
+
+/* footer starts */
+.footer{
     width: 100%;
-    height: 65vh;
-    background-color: rgb(7, 7, 63);
-    /* color: aliceblue; */
+    height: 100px;
+    background-color:#4e4bc2;
+    color: aliceblue;
     float: left;
 }
-
-
-.footer-section .footer-section-content{
-    margin-left: 130px;
-    margin-top: 120px;
-}
-.footer-box{
-    width: 23%;
-    height: 250px;
-    background-color: aliceblue;
-    float: left;
-    /* margin: 25px; */
-}
-
-.footer-box h1{
-    padding-left: 25px;
+.footer p{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
 }
