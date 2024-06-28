@@ -209,7 +209,7 @@
 }
 /* services css ends */
 
-
+/* number section css starts */
 .number-section{
     width: 100%;
     height: 65vh;
@@ -250,4 +250,71 @@
     /* transform: scale(1.02); */
     border: 5px solid azure;
 
+}
+/* number section css ends */
+
+/* blog css starts */
+.blog{
+    width: 100%;
+    height: 155vh;
+    float: left;
+}
+
+.blog h1{
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+}
+.blog .blog-container{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.blog-post{
+    width: 30%;
+    height: 800px;
+    background-color: aliceblue;
+    float: left;
+    margin: 15px;
+    transition: .5s ease;
+}
+
+.blog-post img{
+    width:100%;
+    height:250px;
+}
+.blog-post h1{
+    /* font-size: 30px; */
+    padding: 30px;
+}
+.blog-post p{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px;
+    padding-left: 30px;
+    
+}
+
+.blog-post:hover{
+    box-shadow: 0px 0px 30px -6px #000;
+}
+/* blog css ends */
+
+.footer-section{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(7, 7, 63);
+    color: aliceblue;
+    float: left;
+}
+
+
+.footer-section .footer-section-content{
+    margin-left: 50px;
+}
+.footer-box{
+    width: 21%;
+    height: 250px;
+    background-color: aliceblue;
+    float: left;
+    margin: 25px;
 }
