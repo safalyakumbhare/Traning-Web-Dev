@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Social media css starts */
+.social-media-links {
+  width: 100%;
+  background-color: #4e4bc2;
+  float: left;
+}
+
+.links {
+  height: 50px;
+  width: 50px;
+  background-color: #1778f2;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 10px;
+  /* transition: 0.5s ease; */
+}
+.link-container {
+  margin-left: 150px;
+}
+.links a:hover {
+  color: aliceblue;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(10, 10, 80);
+  transition: 0.5s ease;
+}
+/* Social media css ends */
+
+/* header css starts */
+.header-section {
+  width: 100%;
+  float: left;
+  background-color: aliceblue;
+}
+
+.header-section .logo {
+  float: left;
+  margin-left: 150px;
+}
+
+.header-section .menus {
+  margin-left: 700px;
+}
+.header-section .menus ul li {
+  float: left;
+  list-style: none;
+  margin: 15px;
+  padding-top: 20px;
+  font-size: 25px;
+}
+.header-section .menus ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.1s ease;
+}
+
+.header-section .menus ul li a:hover {
+  color: rgb(64, 64, 180);
+  text-decoration: underline;
+}
+
+/* header css ends */
+
+.content-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/webbg.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.content-img .content-text{
+    color: aliceblue;
+    padding-top: 300px;
+    font-size: 25px;
+    padding-left: 170px;
+    padding-right: 350px;
+}
+
+.content-img .content-text p{
+    padding-top: 25px;
+}
+
+.content-btn{
+    margin-top: 50px;
+}
+
+.content-btn button{
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: none;
+    
+
+}
+
+.content-btn .contact{
+    background-color: rgb(64, 64, 180);
+    color: aliceblue;
+    margin: 15px;
+    transition: .5s ease;
+}
+
+.content-btn .contact:hover{
+    background-color: aliceblue;
+    color: rgb(64, 64, 180);
+}
+
+.content-btn .abt{
+    color: rgb(64, 64, 180);
+    background-color: aliceblue;
+    /* margin: 10px; */
+    transition: .5s ease;
+}
+
+.content-btn .abt:hover{
+    background-color: rgb(64, 64, 180);
+    color: aliceblue;
+}
