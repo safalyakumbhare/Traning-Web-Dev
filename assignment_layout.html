@@ -53,10 +53,47 @@
     }
     /* Social media css ends */
 
+
+    /* header css starts */
+    .header-section {
+      width:100%;
+      float: left;
+    }
+
+    .header-section .logo{
+      float: left;
+      margin-left: 150px;
+    }
+
+    .header-section .menus{
+      margin-left: 700px;
+
+    }
+    .header-section .menus ul li{
+      float: left;
+      list-style: none;
+      margin: 15px;
+      padding: 10px;
+      font-size: 25px
+      
+    }
+    .header-section .menus ul li a{
+      text-decoration: none;
+      color:black;
+      transition: .1s ease;
+      }
+
+      .header-section .menus ul li a:hover{
+        color: rgb(64, 64, 180);
+        text-decoration: underline;
+      }
+
+      /* header css ends */
+
   </style>
   <body>
 
-    <!-- Social Media starts -->
+    <!-- Social Media section starts -->
     <div class="social-media-links">
       <div class="link-container">
         <div class="links"><a href="#"><i class="fa-brands fa-facebook"></i></a></i></div>
@@ -65,8 +102,23 @@
       </div>
     </div>
 
-    <!-- Social Media ends -->
+    <!-- Social Media section ends -->
 
+    <!-- header section starts -->
 
+    <div class="header-section">
+      <div class="logo">
+        <img src="images/weblogo.jpeg" height="100px" width="125px" alt="logo">
+      </div>
+      <div class="menus">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Domain</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
