@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Tech Solutions</title>
-    <link rel="shortcut icon" href="images/weblogo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/weblogo.jpeg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,7 +17,7 @@
 
   <body>
     <!-- Social Media section starts -->
-    <div class="social-media-links">
+    <div class="social-media-links" id="home">
       <div class="link-container">
         <div class="links">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -44,10 +44,10 @@
       </div>
       <div class="menus">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Service</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Service</a></li>
+          <li><a href="assignment_layout_contactus.html">Contact Us</a></li>
           <li><a href="#">Domain</a></li>
         </ul>
       </div>
@@ -55,13 +55,15 @@
     <!-- Header section ends -->
 
     <!-- Content section starts -->
-    <div class="content-img">
+    <div class="content-img" >
       <div class="content-text">
         <h1>Empowering businesses with cutting-edge web development.</h1>
         <p>Modern technologies to keep you ahead of the curve.</p>
         <div class="content-btn">
           <button class="abt">About Us</button>
-          <button class="contact">Contact Us</button>
+          <a href="assignment_layout_contactus.html"
+            ><button class="contact">Contact Us</button></a
+          >
         </div>
       </div>
     </div>
@@ -78,7 +80,7 @@
     <!-- Brief section ends -->
 
     <!-- Services section starts -->
-    <div class="services">
+    <div class="services" id="services">
       <h1>Our Services</h1>
       <div class="services-container">
         <div class="service">
@@ -137,6 +139,7 @@
     </div>
     <!-- Number section ends -->
 
+    <!-- blog section starts -->
     <div class="blog">
       <h1>Our Blog</h1>
 
@@ -189,7 +192,7 @@
     <!-- blog section ends -->
 
     <!-- footer section starts -->
-    <div class="footer-section">
+    <div class="footer-section" id="about">
       <div class="footer-section-content">
         <div class="footer-box">
           <h1>About Us</h1>
@@ -208,7 +211,6 @@
             Cloud Hosting and their future for every business digital platform
           </p>
           <p>AI in Web development? How it is important?</p>
-
         </div>
         <div class="footer-box">
           <h1>Categories</h1>
@@ -225,8 +227,11 @@
       </div>
     </div>
     <!-- footer section ends -->
+
+    <!-- main footer starts -->
     <div class="footer">
       <p>Proudly powered by Web Tech Solutions | 2024</p>
     </div>
+    <!-- main footer ends -->
   </body>
 </html>
