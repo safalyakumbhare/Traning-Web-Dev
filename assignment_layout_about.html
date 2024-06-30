@@ -22,7 +22,7 @@
 
     .about {
       width: 100%;
-      height: 100vh;
+      height: 100%;
       float: left;
       background-color: aliceblue;
     }
@@ -33,8 +33,27 @@
       text-align: center;
     }
 
-    .about .about-img{
-        
+    .about .box {
+      width: 45%;
+      height: 100%;
+      /* background-color: aquamarine; */
+      margin: 35px;
+      float: left;
+    }
+
+    .box img {
+      border-radius: 25px;
+      margin-left: 100px;
+    }
+
+    .box p {
+      padding: 50px 25px 50px 15px;
+      font-size: 30px;
+    }
+    .about-text2 p {
+      padding: 50px 25px 50px 15px;
+      font-size: 30px;
+      text-align: right;
     }
   </style>
   <body>
@@ -57,12 +76,14 @@
     <!-- Header section starts -->
     <div class="header-section">
       <div class="logo">
-        <img
-          src="images/weblogo.jpeg"
-          height="100px"
-          width="125px"
-          alt="Company Logo"
-        />
+        <a href="assignment_layout.html"
+          ><img
+            src="images/weblogo.jpg"
+            height="115px"
+            width="125px"
+            alt="Company Logo"
+          />
+        </a>
       </div>
       <div class="menus">
         <ul>
@@ -84,9 +105,35 @@
     </div>
     <!-- Content section ends -->
 
+    <!-- About content section starts -->
     <div class="about">
-      <div class="about-img1"></div>
-      <div class="about-text1"></div>
+      <div class="box about-img">
+        <img src="images/about1.jpeg" height="400px" width="400px" alt="" />
+      </div>
+      <div class="box about-text">
+        <p>
+          Welcome to Web Tech Solutions, where creativity meets technology to
+          deliver exceptional web development services. We specialize in
+          crafting modern, responsive websites tailored to meet the unique needs
+          of your business. Our mission is to empower businesses with innovative
+          web solutions that elevate their online presence and drive success.
+        </p>
+      </div>
+    </div>
+    <div class="about">
+      <div class="box about-text2">
+        <p>
+          At Web Tech Solutions, we believe that every business deserves a
+          website that not only looks stunning but also performs seamlessly. Our
+          team of experienced developers and designers are dedicated to turning
+          your ideas into functional, high-performance online platforms. We take
+          a user-centric approach to design, ensuring that your website is
+          intuitive, engaging, and optimized for the best user experience.
+        </p>
+      </div>
+      <div class="box about-img">
+        <img src="images/about1.jpeg" height="400px" width="400px" alt="" />
+      </div>
     </div>
 
     <!-- footer section starts -->

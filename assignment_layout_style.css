@@ -42,6 +42,7 @@
   width: 100%;
   float: left;
   background-color: aliceblue;
+  height: 115px;
 }
 
 .header-section .logo {
@@ -266,7 +267,7 @@
 }
 .blog-post {
   width: 30%;
-  height: 800px;
+  height: 750px;
   background-color: aliceblue;
   float: left;
   margin: 15px;
