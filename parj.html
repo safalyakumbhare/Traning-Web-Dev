@@ -3,119 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web page</title>
+    <title>UserForm</title>
     <style>
-      .main-container {
-        border: 2px solid darkblue;
-        padding: 25px;
-        background-color: darkblue;
+      * {
+        background-color: gainsboro;
       }
-      .section1 {
-        margin-left: 500px;
-        background-color: azure;
-        height: 100px;
+
+      h1 {
+        text-align: center;
+        color: darkblue;
+        border-radius: 20px;
+        padding: 20px;
+        /* box-shadow: 5px 15px 5px skyblue; */
+        background-color: skyblue;
       }
-      .section2 img {
-        height: 110px;
-        width: 120px;
-        float: left;
-        padding-left: 200px;
-        margin-bottom: 50px;
-      }
-      .section1 ul li {
-        float: left;
-        list-style: none;
-        padding: 15px;
-        font-size: 20px;
-      }
-      .section3 {
-        background-image: url(images/bgimg.jpg);
+
+      form {
         width: 100%;
-        height: 600px;
-        background-repeat: none;
+        height: 100%;
       }
-      .section4 {
-        color: aliceblue;
-        border: 1px;
-        background-color: palevioletred;
+
+      /* .box label input{ */
+      /* padding: 20px; */
+      /* margin: 10px; */
+      /* float: left; */
+      /* } */
+      h3 {
+        /* text-align: center; */
+        color: black;
+      }
+
+      .box {
+        font-size: 25px;
         padding: 40px;
       }
-      .section3 h1 {
-        text-align: center;
-        color: white;
-        font-size: 150px;
-        padding: 50px;
-        margin: 50px;
-        margin-top: 0;
 
+      .box input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        /* display: block; */
+        display: flex;
+        width: 300px;
+        height: 30px;
+
+        margin: 20px;
+        padding: 5px;
+        font-size: 20px;
       }
 
-      .main-container1{
-        width: 50%;
-        height: 100vh;
+      .box label {
+        margin: 20px;
+      }
+
+      .box input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+        margin: 10px;
+      }
+
+      .box input[type="submit"], input[type="Reset"] {
+        width: 100px;
+        height: 20px;
+        margin: 10px;
+        background-color: cornflowerblue;
+        display: flex;
         float: left;
+        /* padding: 20px; */
       }
-      .main-container1 h1 {
-        /* float: left; */
-        font-size: 50px;
-      }
-      .main-container1 p {
-        /* float: left; */
-        width: 500px;
-        /* padding: 10px; */
-        /* margin-top: 10%; */
-      }
-      .section4 h1 {
-        font-size: 30px;
-        /* font-family: ; */
-      }
-
-
     </style>
   </head>
+
   <body>
-    <div class="main-container"></div>
-    <div class="section2">
-      <img src="images/weblogo.jpeg" alt="" srcset="" />
-    </div>
+    <h1>User Registration Form</h1>
+    <form action="">
+      <div class="box">
+        <label for="First_name"> First Name :</label>
+        <input
+          type="text"
+          name="First_name"
+          placeholder="Enter Your First Name"
+        />
+        <label for="Last_name">Last Name :</label>
+        <input
+          type="text"
+          name="Last_name"
+          placeholder="Enter Your Last Nmae"
+        />
+        <label for="Email">Email :</label>
+        <input type="email" name="Email" placeholder="Enter Your Email" />
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Your Password"
+        />
+        <h3>Select Your Gender</h3>
 
-    <div class="section1">
-      <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Our Services</li>
-        <li>Contact us</li>
-        <li>Domain</li>
-      </ul>
-    </div>
+        <label for="Male"> Male :</label>
+        <input type="radio" />
+        <label for="Female">Female :</label>
+        <input type="radio" />
+        <label for="trans">Trans :</label>
+        <input type="radio" />
 
-    <div class="section3">
-      <h1>IT Company Websites</h1>
-    </div>
-
-    <div class="section4">
-      <h1>The World’s Best</h1>
-      <p>
-        Small Business Website Design Services Imagine, all the benefits of a
-        large agency at a fraction of the cost. We’re not the cheapest option,
-        but for the quality of what you get, there is no better value available.
-      </p>
-    </div>
-    <article>
-      <div class="main-container1">
-        <h1>Custom Design</h1>
-        <p>
-          All of our work is 100% custom. Designed for you in Figma. We never
-          use pre-made templates. Ever. We start with a Website Questionnaire,
-          where we learn more about you, your company and customers. You will
-          share other websites you like the look and feel of along with any
-          fonts, colors or any other design directions you .We will then create
-          a fully custom design, for free, based on your specifications.
-        </p>
+        <h3>Choose Your Skills</h3>
+        <label for="C++"> C++</label>
+        <input type="checkbox" />
+        <label for="Java">Java</label>
+        <input type="checkbox" />
+        <label for="PHP">PHP</label>
+        <input type="checkbox" />
+        <label for="MYSQL">MYSQL</label>
+        <input type="checkbox" />
+        <div class="btn">
+          <input type="submit" />
+          <input type="submit" />
+        </div>
       </div>
-      <div class="side-bar">
-        <video src="images/event.mp4" controls width="400PX" height="400PX"></video>
-      </div>
-    </article>
+    </form>
   </body>
 </html>
