@@ -40,7 +40,7 @@
       .tabcontent {
         display: none;
         /* padding: 6px 12px; */
-        padding-left:50px;
+        padding-left: 50px;
         border: 1px solid #ccc;
         border-top: none;
         height: 100vh;
@@ -48,18 +48,18 @@
       }
 
       .name-section input[type="text"] {
-        
       }
-      .container{
+      .container {
         padding-left: px;
       }
-      .container label{
+      .container label {
         font-size: 20px;
         margin: 10px;
         margin-bottom: 20px;
       }
 
-      .container input[type="text"],input[type="date"]{
+      .container input[type="text"],
+      input[type="date"] {
         font-size: 20px;
         margin: 10px;
         border-radius: 8px;
@@ -67,10 +67,10 @@
         height: 30px;
         background-color: aliceblue;
         /* margin-bottom: 20px; */
-
       }
 
-      .container input[type="submit"],input[type="reset"]{
+      .container input[type="submit"],
+      input[type="reset"] {
         font-size: 20px;
         margin: 10px;
         height: 30px;
@@ -146,7 +146,7 @@
         <input type="text" id="city" name="city" placeholder="City" />
         <input type="text" id="state" name="state" placeholder="State" />
         <input type="text" id="zip" name="zip" placeholder="Zip Code" />
-        <input type="text" id="country" name="country" placeholder="Country"/>
+        <input type="text" id="country" name="country" placeholder="Country" />
       </div>
 
       <div class="container insurance-section">
@@ -161,33 +161,22 @@
 
       <div class="container past-section">
         <label for="past">Past Medical History :</label>
-        <input type="checkbox" name="anemia" id="past">
+        <input type="checkbox" name="anemia" id="past" />
         <label for="anemia">Anemia</label>
-        <input type="checkbox" name="diabetes" id="past">
+        <input type="checkbox" name="diabetes" id="past" />
         <label for="diabetes">Diabetes</label>
-        <input type="checkbox" name="asthama" id="past">
+        <input type="checkbox" name="asthama" id="past" />
         <label for="asthama">Asthma</label>
-        <input type="checkbox" name="chickenpox" id="past">
+        <input type="checkbox" name="chickenpox" id="past" />
         <label for="chickenpox">Chickenpox</label>
-        <input type="checkbox" name="other" id="past">
+        <input type="checkbox" name="other" id="past" />
         <label for="other">Other</label>
       </div>
 
       <div class="btn">
-        <input type="submit" value="Register" name="submit">
-        <input type="reset">
+        <input type="submit" value="Register" name="submit" />
+        <input type="reset" />
       </div>
-    </div>
-
-    <div id="Paris" class="tabcontent">
-      <h3>Doctor Form</h3>
-      <p>Paris is the capital of France.</p>
-      <p>xnkxjn</p>
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-      <h3>Operation Form</h3>
-      <p>Tokyo is the capital of Japan.</p>
     </div>
 
     <script>
@@ -205,5 +194,15 @@
         evt.currentTarget.className += " active";
       }
     </script>
+    <div id="Paris" class="tabcontent">
+      <h3>Doctor Form</h3>
+      <p>Paris is the capital of France.</p>
+      <p>xnkxjn</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Operation Form</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
   </body>
 </html>

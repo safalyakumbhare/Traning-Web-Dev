@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/multi-form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        /* padding: 6px 12px; */
+        padding-left:50px;
+        border: 1px solid #ccc;
+        border-top: none;
+        height: 100vh;
+        background-color: azure;
+      }
+
+      .name-section input[type="text"] {
+        
+      }
+      .container{
+        padding-left: px;
+      }
+      .container label{
+        font-size: 20px;
+        margin: 10px;
+        margin-bottom: 20px;
+      }
+
+      .container input[type="text"],input[type="date"]{
+        font-size: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        width: 250px;
+        height: 30px;
+        background-color: aliceblue;
+        /* margin-bottom: 20px; */
+
+      }
+
+      .container input[type="submit"],input[type="reset"]{
+        font-size: 20px;
+        margin: 10px;
+        height: 30px;
+        width: 100px;
+        background-color: aqua;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body cz-shortcut-listen="true" br-mode="off" saccades-color="" fixation-strength="2" saccades-interval="0" style="--fixation-edge-opacity: 80%; --br-line-height: 1; --br-boldness: 600;">
+    <h2>Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, &#39;London&#39;)">
+        Patient form
+      </button>
+      <button class="tablinks" onclick="openCity(event, &#39;Paris&#39;)">
+        Doctor Form
+      </button>
+      <button class="tablinks active" onclick="openCity(event, &#39;Tokyo&#39;)">
+        Operation Form
+      </button>
+    </div>
+
+    <div id="London" class="tabcontent" style="display: none;">
+      <h1>Patient Registration Form</h1>
+      <div class="container name-section">
+        <label for="fname">Patient Name :</label>
+
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+      </div>
+
+      <div class="container gender-section">
+        <label for="gender">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </div>
+
+      <div class="container phone-section">
+        <label for="phone">Phone Number :</label>
+        <input type="text" id="phone" name="phone" placeholder="Phone Number" <="" div="">
+
+      <div class="container date-section">
+        <label for="date">Date of Birth :</label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <div class="container marital-section">
+        <label for="marital">Marital Status :</label>
+        <input type="radio" name="marital">
+        <label for="single">Single</label>
+        <input type="radio" name="marital">
+        <label for="married">Married</label>
+        <input type="radio" name="marital">
+        <label for="married">Divorced</label>
+        <input type="radio" name="marital">
+        <label for="married">Widow</label>
+      </div>
+
+      <div class="container address-section">
+        <label for="address">Patient's Address :</label>
+        <input type="text" id="address" name="address" placeholder="Street Address">
+        <input type="text" id="city" name="city" placeholder="City">
+        <input type="text" id="state" name="state" placeholder="State">
+        <input type="text" id="zip" name="zip" placeholder="Zip Code">
+        <input type="text" id="country" name="country" placeholder="Country">
+      </div>
+
+      <div class="container insurance-section">
+        <label for="insurance">Insurance Name :</label>
+        <input type="text" id="insurance" name="insurance" placeholder="Insurance Name">
+      </div>
+
+      <div class="container past-section">
+        <label for="past">Past Medical History :</label>
+        <input type="checkbox" name="anemia" id="past">
+        <label for="anemia">Anemia</label>
+        <input type="checkbox" name="diabetes" id="past">
+        <label for="diabetes">Diabetes</label>
+        <input type="checkbox" name="asthama" id="past">
+        <label for="asthama">Asthma</label>
+        <input type="checkbox" name="chickenpox" id="past">
+        <label for="chickenpox">Chickenpox</label>
+        <input type="checkbox" name="other" id="past">
+        <label for="other">Other</label>
+      </div>
+
+      <div class="btn">
+        <input type="submit" value="Register" name="submit">
+        <input type="reset">
+      </div>
+    </div>
+
+   
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+    </script>
+     
+
+    
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div>
+<div id="Paris" class="tabcontent" style="display: none;">
+      <h3>Doctor Form</h3>
+      <p>Paris is the capital of France.</p>
+      <p>xnkxjn</p>
+</div>
+<div id="Tokyo" class="tabcontent" style="display: block;">
+      <h3>Operation Form</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+</body><div style="position: absolute; bottom: 0px; left: 0px; height: 0px; z-index: 5;"><template shadowrootmode="open"><div id="plasmo-mount-container" style="display: flex; position: relative; top: 0px; left: 0px;"></div></template></div></html>
