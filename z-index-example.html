@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .con {
+        height: 500px;
+        width: 500px;
+        background-color: aqua;
+        /* position: a; */
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        margin: 10px;
+        color: aliceblue;
+        position: absolute;
+        
+      }
+
+      .bx1{
+        z-index: 1;
+      }
+
+      .bx2{
+        z-index: 3;
+      }
+
+      .bx4{
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="box bx1"><h1>1</h1></div>
+      <div class="box bx2"><h1>2</h1></div>
+      <div class="box bx3"><h1>3</h1></div>
+      <div class="box bx4"><h1>4</h1></div>
+    </div>
+  </body>
+</html>

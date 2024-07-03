@@ -43,6 +43,8 @@
   float: left;
   background-color: aliceblue;
   height: 115px;
+  position: sticky;
+  top: 0px;
 }
 
 .header-section .logo {
@@ -320,7 +322,6 @@
   font-size: 40px;
   padding-left: 25px;
   color: aliceblue;
-
 }
 
 .footer-box p {
@@ -328,27 +329,27 @@
   padding-top: 25px;
   /* float: left; */
   font-size: 20px;
-  color: #ADBBCB;
+  color: #adbbcb;
 }
 
-.footer-box i{
-    float: left;
-    /* padding-left: 25px; */
-    /* padding-top: 25px; */
+.footer-box i {
+  float: left;
+  /* padding-left: 25px; */
+  /* padding-top: 25px; */
 }
 /* footer section css ends */
 
 /* footer starts */
-.footer{
-    width: 100%;
-    height: 100px;
-    background-color:#4e4bc2;
-    color: aliceblue;
-    float: left;
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #4e4bc2;
+  color: aliceblue;
+  float: left;
 }
-.footer p{
-    text-align: center;
-    padding-top: 25px;
-    font-size: 25px;
+.footer p {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 25px;
 }
 /* footer ends */
