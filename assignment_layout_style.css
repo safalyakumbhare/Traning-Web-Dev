@@ -8,6 +8,8 @@
   width: 100%;
   background-color: #4e4bc2;
   float: left;
+  position: sticky;
+  top: 0px;
 }
 
 .links {
@@ -43,8 +45,8 @@
   float: left;
   background-color: aliceblue;
   height: 115px;
-  position: sticky;
-  top: 0px;
+
+  
 }
 
 .header-section .logo {
@@ -353,3 +355,12 @@
   font-size: 25px;
 }
 /* footer ends */
+
+
+/* chatbox starts */
+.chatbox-section img{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+/* chatbox ends */
