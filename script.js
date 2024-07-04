@@ -1,0 +1,1 @@
+document.getElementsByClassName(abt).onclick = alert("About Us will soon available");
