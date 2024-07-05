@@ -1,1 +1,3 @@
-document.getElementsByClassName(abt).onclick = alert("About Us will soon available");
+function about(){
+    alert("About Us is under development");
+}

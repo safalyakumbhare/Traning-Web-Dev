@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>On Click Event</title>
-    <script>
-        function click()
-        {
-            // alert("You Clicked Me");
-            document.getElementById("demo").innerHTML = "You Clicked Me";
-        }
-    </script>
-</head>
-<body>
-    <button onclick="click()">Click Me</button>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
     <p id="demo"></p>
-</body>
+
+    <script>
+      // alert("You Clicked Me");
+      document.getElementById("btn").onclick = click();
+      function click() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+  </body>
 </html>

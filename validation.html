@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function check() {
+        var x = document.forms["frm"]["name"].value;
+        if (x == "") {
+          document.getElementById("demoname").innerHTML = "Name must be filled";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form name="frm" action="">
+      Name :<input type="text" name="name" placeholder="name" />
+      <br />
+      <p id="demoname"></p>
+      <br />
+      Email :<input type="text" name="email" placeholder="email" />
+      <br />
+      <p id="demoemail"></p>
+      <input type="submit" onclick="check()" name="submit" />
+    </form>
+  </body>
+</html>
