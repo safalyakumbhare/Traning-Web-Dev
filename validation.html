@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function check() {
+      function check(event) {
+        event.preventDefault(); // Prevent form submission
+
         var x = document.forms["frm"]["name"].value;
         if (x == "") {
           document.getElementById("demoname").innerHTML = "Name must be filled";
+        } else {
+          document.getElementById("demoname").innerHTML = "";
+        }
+
+        var y = document.forms["frm"]["email"].value;
+        if (y == "") {
+          document.getElementById("demoemail").innerHTML = "Email must be filled";
+        } else {
+          document.getElementById("demoemail").innerHTML = "";
         }
       }
     </script>
   </head>
 
   <body>
-    <form name="frm" action="">
+    <form name="frm">
       Name :<input type="text" name="name" placeholder="name" />
       <br />
       <p id="demoname"></p>
       <br />
+      <br />
       Email :<input type="text" name="email" placeholder="email" />
       <br />
       <p id="demoemail"></p>
-      <input type="submit" onclick="check()" name="submit" />
+      <button onclick="check(event)" name="submit">Click here</button>
     </form>
   </body>
 </html>
