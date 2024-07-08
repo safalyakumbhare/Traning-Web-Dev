@@ -15,13 +15,30 @@
     <link rel="stylesheet" href="assignment_layout_style.css" />
   </head>
   <style>
-    .job-application-form{
-        height: 120vh;
-        width: 100%;
-        float: left;
-        background-color: aliceblue;
-        padding-left: 80px;
-        padding-top: 50px;
+    .job-application-form {
+      height: 120vh;
+      width: 100%;
+      float: left;
+      background-color: aliceblue;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 50px;
+    }
+
+    .job-application-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .job-application-form h1 {
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
+
+    .job-application-form label {
+      margin: 20px 0 20px 0;
+      font-size: 20px;
+    }
+    .job-application-form select {
     }
   </style>
   <body>
@@ -75,10 +92,29 @@
 
     <!-- Job Application form starts-->
     <div class="job-application-form">
-        <h1>Job Application</h1>
-        <form>
-            <label for="name">Applying for the post:</label>
-        </form>
+      <h1>Job Application</h1>
+      <form>
+        <label for="name">Applying for the post:</label>
+        <select name="name" id="name">
+          <option value="front-end developer">Front-End Developer</option>
+          <option value="back-end developer">Back-End Developer</option>
+          <option value="full-stack developer">Full-Stack Developer</option>
+          <option value="app developer">App Developer</option>
+          <option value="software tester">Software Tester</option>
+        </select>
+        <label for="relocate">Are you willing to relocate? </label>
+        <div class="relocate">
+          <label for="yes">Yes</label>
+          <input type="radio" name="relocate" id="relocate" value="yes" />
+          <label for="no">No</label>
+          <input type="radio" name="relocate" id="relocate" value="no" />
+        </div>
+        <label for="join">When you will join? </label>
+        <input type="date" name="join" id="join" />
+        <label for="link">Website / Protfolio / Blog</label>
+        <input type="text" name="link" id="link" />
+
+      </form>
     </div>
     <!-- Job Application form ends -->
     <!-- footer section starts -->
