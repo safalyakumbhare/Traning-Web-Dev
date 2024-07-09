@@ -16,7 +16,7 @@
   </head>
   <style>
     .job-application-form {
-      height: 230vh;
+      height: 240vh;
       width: 100%;
       float: left;
       background-color: aliceblue;
@@ -60,10 +60,14 @@
     .job-application-form input[type="radio"] {
       margin: 5px;
     }
+
+    .job-application-form p {
+      color: red;
+    }
     .job-application-form #btn {
       --clr-font-main: hsla(0 0% 20% / 100);
       --btn-bg-1: hsla(194 100% 69% / 1);
-      --btn-bg-2: hsla(217 100% 56% / 1);
+      --btn-bg-2: #4e4bc2;
       --btn-bg-color: hsla(360 100% 100% / 1);
       --radii: 0.5em;
       cursor: pointer;
@@ -88,8 +92,8 @@
         0px 5px 5px -1px rgba(58, 125, 233, 0.25),
         inset 4px 4px 8px rgba(175, 230, 255, 0.5),
         inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-        width: 150px;
-        margin-top: 30px;
+      width: 150px;
+      margin-top: 30px;
     }
 
     #btn:hover {
@@ -159,9 +163,9 @@
     <!-- Job Application form starts-->
     <div class="job-application-form">
       <h1>Job Application</h1>
-      <form>
+      <form name="job">
         <label for="name">Applying for the post:</label>
-        <select name="name" id="name">
+        <select name="post" id="name">
           <option value="front-end developer">Front-End Developer</option>
           <option value="back-end developer">Back-End Developer</option>
           <option value="full-stack developer">Full-Stack Developer</option>
@@ -177,29 +181,38 @@
         </div>
         <label for="join">When you will join? </label>
         <input type="date" name="join" id="join" />
+        <p id="dateError"></p>
         <label for="link">Website / Protfolio / Blog</label>
         <input type="text" name="link" id="link" />
         <label for="salaryexpt">Salary Expectation :</label>
         <input type="text" name="salaryexpt" id="salaryexpt" />
+        <p id="salaryError"></p>
+
         <label for="resume">Attach your resume : </label>
         <input type="file" name="resume" id="resume" />
-
+        <p id="resumeError"></p>
         <h2>Contact Information</h2>
         <label for="name">Name :</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="empname" id="name" />
+        <p id="nameError"></p>
         <label for="email">Email :</label>
         <input type="email" name="email" id="email" />
+        <p id="emailError"></p>
+
         <label for="phone">Phone :</label>
         <input type="tel" name="phone" id="phone" />
+        <p id="phoneError"></p>
         <label for="address">Address :</label>
         <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <p id="addressError"></p>
         <label for="msg">Message :</label>
         <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-
-        <input type="submit" name="submit" id="btn" value="Submit" />
+        <button type="submit" onclick="check(event)" id="btn">Submit</button>
+        <!-- <input type="submit" onclick="check()" name="submit" id="btn" value="Submit" /> -->
       </form>
     </div>
     <!-- Job Application form ends -->
+
     <!-- footer section starts -->
     <div class="footer-section">
       <div class="footer-section-content">
@@ -242,5 +255,7 @@
       <p>Proudly powered by Web Tech Solutions | 2024</p>
     </div>
     <!-- main footer ends -->
+
+    <script src="assignment_layout_script.js"></script>
   </body>
 </html>
