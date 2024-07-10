@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: aquamarine;
+    }
+
+    .header__menu ul{
+        display: flex;
+    }
+    .header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    @media screen and (min-device-width:481px) and (max-device-width:786px) {
+        .header {
+            display: inline-block;
+            height: 200px;
+            width: 100%;
+        }
+        .header__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .header__menu ul{
+            /* display: block; */
+        }
+        
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="header__logo"><img src="images/new-logo.webp" alt=""></div>
+        <div class="header__menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

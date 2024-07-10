@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 500px;
+        background-color: aquamarine;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box1{
+        width: 45%;
+        height: 400px;
+        background-color: black;
+        margin: 10px;
+        color: aliceblue;
+        
+    }
+    .box1 p{
+        font-size: 35px;
+        border: 2px solid aqua;
+        /* margin: 10px; */
+    }
+    .box2{
+        width:45%;
+        height: 400px;
+        background-color: blueviolet;
+        margin: 10px;
+    }
+
+    @media screen and (min-device-width:481px) and (max-device-width:768px) {
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <div class="box1">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div class="box2">
+            <img src="images/about2.jpeg" height="300px" width="300px" alt="">
+        </div>
+    </div>
+</body>
+</html>
