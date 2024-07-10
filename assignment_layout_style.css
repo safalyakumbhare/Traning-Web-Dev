@@ -52,8 +52,11 @@
 .header-section .logo {
   float: left;
   margin-left: 150px;
+  
 }
-
+.header-section .logo img{
+  padding: 10px;
+}
 .header-section .menus {
   margin-left: 700px;
 }
@@ -61,7 +64,7 @@
   float: left;
   list-style: none;
   margin: 15px;
-  padding-top: 20px;
+  padding-top: 26px;
   font-size: 25px;
 }
 .header-section .menus ul li a {
@@ -205,7 +208,7 @@
 
 .service:hover {
   transform: scale(1.02);
-  border: 3px solid #1778f2;
+  /* border: 3px solid #1778f2; */
   box-shadow: 0px 0px 30px -6px #000;
 }
 /* services css ends */
@@ -364,3 +367,9 @@
   right: 0;
 }
 /* chatbox ends */
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+  .header-section .menu ul li{
+    width: 100%;
+  }
+}

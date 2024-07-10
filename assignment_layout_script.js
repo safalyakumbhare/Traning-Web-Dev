@@ -17,28 +17,28 @@ function check(event) {
 
   let name = document.forms["job"]["empname"].value;
   if (name == "") {
-    document.getElementById("nameError").innerHTML = "Enter your name";
+    document.getElementById("nameError").innerHTML = "Please Enter your name";
   } else {
     document.getElementById("nameError").innerHTML = "";
   }
 
   let email = document.forms["job"]["email"].value;
   if (email == "") {
-    document.getElementById("emailError").innerHTML = "Enter your email";
+    document.getElementById("emailError").innerHTML = "Please Enter your email";
   } else {
     document.getElementById("emailError").innerHTML = "";
   }
 
   let phone = document.forms["job"]["phone"].value;
   if (phone == "") {
-    document.getElementById("phoneError").innerHTML = "Enter your Phone Number";
+    document.getElementById("phoneError").innerHTML = "Please Enter your Phone Number";
   } else {
     document.getElementById("phoneError").innerHTML = "";
   }
 
   let address = document.forms["job"]["address"].value;
   if (address == "") {
-    document.getElementById("addressError").innerHTML = "Enter your Address";
+    document.getElementById("addressError").innerHTML = "Please Enter your Address";
   } else {
     document.getElementById("addressError").innerHTML = "";
   }
@@ -46,7 +46,7 @@ function check(event) {
   let date = document.forms["job"]["join"].value;
   if (date == "") {
     document.getElementById("dateError").innerHTML =
-      "Enter your Date of Joining";
+      "Please Enter your Date of Joining";
   } else {
     document.getElementById("dateError").innerHTML = "";
   }
