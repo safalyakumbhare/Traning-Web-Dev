@@ -369,7 +369,8 @@
 /* chatbox ends */
 
 @media screen and (min-device-width: 481px) and (max-device-width: 768px){
-  .header-section .menu ul li{
-    width: 100%;
+  .content-text h1{
+    /* width: 100%; */
+    color: #1778f2;
   }
 }
