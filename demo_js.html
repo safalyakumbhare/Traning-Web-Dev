@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        function internal(){
+            // alert("Hello, I am Internal Javascript")
+            document.getElementById("text").innerHTML = "Hello You Clicked  Internal Javascript";
+        }
+    </script>
+    <script src="js/demo_js.js"></script>
+  </head>
+  <body>
+    <button class="internal" onclick="internal()">Internal Javascript</button>
+    <button class="external" onclick="external()">External Javascript</button>
+    <button onclick="document.getElementById('text').innerHTML = 'Hello You Clicked Inline Javascript';">Inline Javascript</button>
+
+    <h2 id="text"></h2>
+  </body>
+</html>
