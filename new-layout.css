@@ -344,7 +344,7 @@
   align-items: center;
 }
 
-.box-sec,.box-con-page5 .box-price {
+.box-sec .box-price {
   margin-top: 55px;
   padding-left: 25px;
   padding-right: 25px;
@@ -386,10 +386,11 @@
 .box-con-page5 {
   width: 91%;
   height: 600px;
-  background-color: #ff4800;
+  /* background-color: #ff4800; */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .box-con-page5 .boxes {
@@ -400,4 +401,18 @@
 
 .boxes img {
   width: 100%;
+}
+
+.boxes h4{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.boxes p{
+  margin-top: 30px;
+  margin-left: 20px;
+  line-height: 1.6em;
+  font-size: 15px;
+  margin-right: 20px;
 }
