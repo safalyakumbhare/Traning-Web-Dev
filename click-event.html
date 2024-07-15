@@ -6,12 +6,12 @@
     <title>On Click Event</title>
   </head>
   <body>
-    <button id="btn">Click Me</button>
+    <button onclick="click()">Click Me</button>
     <p id="demo"></p>
 
     <script>
       // alert("You Clicked Me");
-      document.getElementById("btn").onclick = click();
+      // document.getElementById("btn").onclick = click();
       function click() {
         document.getElementById("demo").innerHTML = Date();
       }

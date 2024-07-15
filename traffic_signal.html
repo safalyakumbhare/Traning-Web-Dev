@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function action(event) {
+      event.preventDefault();
+      var light = document.getElementById("light").value;
+
+      switch (light) {
+        case 0: {
+          document.getElementById("action").value = "Stop";
+          break;
+        }
+        case 1: {
+          document.getElementById("action").value = "Slow";
+          break;
+        }
+        case 2: {
+          document.getElementById("action").value = "Go";
+          break;
+        }
+      }
+    }
+  </script>
+  <body>
+    <label for="light">Select the traffic Light : </label>
+    <select id="light" name="light">
+      <option value="red">Red</option>
+      <option value="yellow">Yellow</option>
+      <option value="green">Green</option>
+    </select>
+    <button onclick="action(event)">Action</button>
+
+    <br />
+    <br />
+    <h2 id="action"></h2>
+  </body>
+</html>
