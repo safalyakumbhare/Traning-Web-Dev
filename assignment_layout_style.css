@@ -72,6 +72,38 @@
   color: black;
   transition: 0.1s ease;
 }
+/*Dropdown css starts*/
+.submenu{
+  position: relative;
+}
+.submenu-content {
+  display: none;
+  position: absolute;
+  height:  200px;
+  width: 200px;
+  background-color: aliceblue;
+
+}
+.submenu-content a{
+  text-decoration: none;
+  align-items: center;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.submenu-content a:hover{
+  background-color: whitesmoke;
+
+}
+.submenu:hover .submenu-content{
+  display: block;
+}
+
+
+/*Dropdown css ends*/
+
 
 .header-section .menus ul li a:hover {
   color: rgb(64, 64, 180);
