@@ -394,7 +394,7 @@
 }
 
 .box-con-page5 .boxes {
-  height: 450px;
+  height: 500px;
   width: 350px;
   background-color: #edf3f5;
 }
@@ -415,4 +415,26 @@
   line-height: 1.6em;
   font-size: 15px;
   margin-right: 20px;
+}
+
+.boxes .line1{
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 215px;
+  border: 2.3px solid #ff4800;
+  border-radius: 25px;
+  position: absolute;
+}
+
+.boxes .circle1{
+  height: 45px;
+  width: 45px;
+  background-color: #ff4800;
+  position: relative;
+  top: 10px;
+  left: 200px;
+  border-radius: 50%;
+
+  color: #ecf2f5;
+
 }
