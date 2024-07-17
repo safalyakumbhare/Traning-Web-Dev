@@ -21,4 +21,8 @@
   left: 0;
 }
 
+.header img {
+  position: relative;
+  z-index: 1;
+}
 
