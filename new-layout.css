@@ -691,32 +691,120 @@
     justify-content: center;
     align-items: center;
   }
-
+  .main-menu{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-menu .logo{
+    margin: 35px;
+  }
+  .main-menu .menus{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 35px;
+  }
   .page4{
     flex-direction: column;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .page4 .box{
-    width: 100%;
+    width: 90%;
+  }
+
+  .page4 .box h1{
+    text-align: center;
   }
   .page2 {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding: 35px;
   }
 
   .page3{
     width: 100%;
     height: 100%;
     flex-direction: column;
+    padding: 55px;
   }
   .page1{
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
+
+  .page1-content{
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    margin: 0;
+  }
   .page1 p,h2{
-    display: none;
+
+    /* display: none; */
+  }
+
+  .main-menu{
+    width: 100%;
+    height: 100%;
+  }
+  .page5{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+  }
+
+  .page5 .box-con-page5{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    
+  }
+  .page5 .box-con-page5 .boxes{
+    margin: 20px;
+  }
+  .page6{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .page6 .pg-box{
+    width: 100%;
+    height: 100%;
+  }
+  .page7{
+    width: 100%;
+    height: 100%;
+  }
+  .page7-container{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .page7-box{
+    width: 100%;
+    height: 100%;
+  }
+
+  .page4 h1{
+    
   }
 }
