@@ -531,8 +531,6 @@
   align-items: center;
 }
 
-.sbox img {
-}
 
 .sbox-num {
   display: flex;
@@ -749,10 +747,6 @@
     padding: 25px;
     margin: 0;
   }
-  .page1 p,h2{
-
-    /* display: none; */
-  }
 
   .main-menu{
     width: 100%;
@@ -804,7 +798,6 @@
     height: 100%;
   }
 
-  .page4 h1{
-    
-  }
 }
+
+/*Responsive Ends*/
