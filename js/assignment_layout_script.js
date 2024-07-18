@@ -23,22 +23,27 @@ function check(event) {
   }
 
   let email = document.forms["job"]["email"].value;
-  if (email == "") {
-    document.getElementById("emailError").innerHTML = "Please Enter your email";
-  } else {
-    document.getElementById("emailError").innerHTML = "";
-  }
 
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    // alert("Correct");
+    document.getElementById("emailError").innerHTML = "";
+  } else {
+    document.getElementById("emailError").innerHTML = "You have entered an invalid email address!"
+    // alert("You have entered an invalid email address!");
+    // return false;
+  }
   let phone = document.forms["job"]["phone"].value;
   if (phone == "") {
-    document.getElementById("phoneError").innerHTML = "Please Enter your Phone Number";
+    document.getElementById("phoneError").innerHTML =
+      "Please Enter your Phone Number";
   } else {
     document.getElementById("phoneError").innerHTML = "";
   }
 
   let address = document.forms["job"]["address"].value;
   if (address == "") {
-    document.getElementById("addressError").innerHTML = "Please Enter your Address";
+    document.getElementById("addressError").innerHTML =
+      "Please Enter your Address";
   } else {
     document.getElementById("addressError").innerHTML = "";
   }
@@ -50,6 +55,4 @@ function check(event) {
   } else {
     document.getElementById("dateError").innerHTML = "";
   }
-
-
 }
