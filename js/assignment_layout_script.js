@@ -25,12 +25,10 @@ function check(event) {
   let email = document.forms["job"]["email"].value;
 
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    // alert("Correct");
     document.getElementById("emailError").innerHTML = "";
   } else {
     document.getElementById("emailError").innerHTML = "You have entered an invalid email address!"
-    // alert("You have entered an invalid email address!");
-    // return false;
+
   }
   let phone = document.forms["job"]["phone"].value;
   if (phone == "") {
