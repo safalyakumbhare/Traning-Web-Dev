@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $("#head").click(function(){
-        $("#para").hide(500);
+    $(".head").click(function(){
+        // $(".parax").hide(500);
+        alert("Helo");
     });
 });
