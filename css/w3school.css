@@ -16,8 +16,11 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  overflow:auto;
 }
-
+.sidebar h2{
+  cursor: pointer;
+}
 .sidebar a {
   text-decoration: none;
   font-size: 18px;
@@ -28,4 +31,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+}
+
+.sidebar .htmlsub,.csssub,.jqsub {
+  display: none;
 }
