@@ -1,13 +1,12 @@
 $(document).ready(function(){
-    $(".topic").click(function(){
+    $(".topic").mouseenter(function(){
         $(".htmlsub").slideToggle(500);
     });
 
-    $(".csstopic").click(function(){
+    $(".csstopic").mouseenter(function(){
         $(".csssub").slideToggle(500);
-    })
-    $(".jqtopic").click(function(){
+    });
+    $(".jqtopic").mouseenter(function(){
         $(".jqsub").slideToggle(500);
-    })
+    });
 });
-
