@@ -1,6 +1,8 @@
-$(document).ready(function(){
-    $(".head").click(function(){
-        // $(".parax").hide(500);
-        alert("Helo");
-    });
+$(document).ready(function () {
+  alert("teteter");
+
+  $(".txt-section").click(function () {
+    $(".parax").hide();
+    //alert("Helo");
+  });
 });
