@@ -54,3 +54,8 @@ function check(event) {
     document.getElementById("dateError").innerHTML = "";
   }
 }
+
+/*Jquery Date picker*/
+$(document).ready(function(){
+  $("#join").datepicker();
+})
