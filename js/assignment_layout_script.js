@@ -60,7 +60,7 @@ $(document).ready(function(){
   $("#join").datepicker();
 
   $("#btn").click(function(){
-    alert("Thank You "+ $("#ename").val() +" for Applying for Job We Will Reach You soon.")
-  })
+    alert("Thank You "+ $("#ename").val() +" for Applying for Job We Will Reach You soon.");
+  });
 });
 
