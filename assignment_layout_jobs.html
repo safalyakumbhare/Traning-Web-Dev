@@ -13,13 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assignment_layout_style.css" />
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
   </head>
   <style>
     .job-application-form {
-      height: 250vh;
+      height: 2000px;
       width: 100%;
       float: left;
       background-color: aliceblue;
@@ -109,15 +110,22 @@
     }
     input:focus {
       outline: none;
-      border-bottom: 1px solid rgb(123, 123, 234);
-      
-      
-      
+      border-bottom: 2px solid #4e4bc2;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-bottom: 2px solid #4e4bc2;
     }
     @media (prefers-reduced-motion: reduce) {
       #btn {
         transition: linear;
       }
+    }
+
+    .error {
+      color: red;
+      font-style: italic;
     }
   </style>
   <body>
@@ -172,7 +180,7 @@
     <!-- Job Application form starts-->
     <div class="job-application-form">
       <h1>Job Application</h1>
-      <form name="job">
+      <form name="job" id="job-apply">
         <label for="name">Applying for the post:</label>
         <select name="post" id="name">
           <option value="front-end developer">Front-End Developer</option>
@@ -193,7 +201,7 @@
         <p id="dateError"></p>
         <label for="link">Website / Protfolio / Blog</label>
         <input type="text" name="link" id="link" />
-        <label for="salaryexpt">Salary Expectation :</label>
+        <label for="salaryexpt">Salary Expectation *(per month) :</label>
         <input type="text" name="salaryexpt" id="salaryexpt" />
         <p id="salaryError"></p>
 
@@ -264,7 +272,6 @@
       <p>Proudly powered by Web Tech Solutions | 2024</p>
     </div>
     <!-- main footer ends -->
-
     <script src="js/assignment_layout_script.js"></script>
   </body>
 </html>
