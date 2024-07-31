@@ -3,10 +3,10 @@ $(document).ready(function () {
     $(".parax").toggle(500);
   });
 
-
-  $(".boxes1").click(function(){
-    alert("Clicked");
+  $("body").fadeIn(500, function () {
+    $(".top-menu").fadeIn(500).css("display","flex");
+    $(".main-menu").slideDown(2000).css("display","flex");
+    $(".page1").slideDown(3000).css("display","flex");
   });
+
 });
-
-
